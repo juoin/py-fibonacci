@@ -1,0 +1,8 @@
+def fibo(n):
+    fibon = [0,1]
+    for i in range(2,n):
+        c = fibon[i-2]+fibon[i-1]
+        fibon.append(c)
+    return fibon
+a = int(input("Enter the range- "))
+print(fibo(a))
